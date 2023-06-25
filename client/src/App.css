@@ -1,0 +1,149 @@
+:root {
+  --primary-color: #08aeb9;
+  --secondary-color: #6200ee;
+  --tranistion: .2s;
+}
+
+header {
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .active {
+  all: unset;
+} */
+
+header a.logo {
+  font-size: 1.7rem;
+  color: var(--primary-color);
+  transition: var(--tranistion);
+  cursor: pointer;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+}
+
+header nav a {
+  cursor: pointer;
+  color: var(--primary-color);
+
+}
+
+header a:hover,
+header a.active {
+  color: var(--secondary-color);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-pre-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 766px) {
+  .post-pre-container {
+    all: unset;
+    display: grid;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+}
+
+.post-pre-container img {
+  max-width: 100%;
+}
+
+.post-pre-container .info {
+  margin: 10px 0
+}
+
+.post-pre-container .info span {
+  margin-right: 10px;
+}
+
+.post-pre-container .info span a {
+  color: #222;
+}
+
+.post-pre-container .info span a {
+  color: #000;
+}
+
+.post-pre-container p {
+  font: .9rem;
+  color: #333
+}
+/* 
+form {
+  padding: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  all: unset;
+  display: block;
+  border: 1px solid #333;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: var(--tranistion);
+  border-color: var(--primary-color);
+  caret-color: var(--secondary-color);
+}
+/* input:focus {
+padding: 30px;
+} 
+button {
+  all: unset;
+  display: block;
+  width: fit-content;
+  color: var(--primary-color);
+  transition: var(--tranistion);
+  padding: 10px;
+  border-radius: 6px;
+}
+button:hover {
+  background-color: var(--primary-color);
+  color: white
+}
+
+p.result {
+  font-size: .7rem;
+  margin-bottom: 5px;
+  color: red;
+}
+input.fail {
+  color: red;
+  text-decoration: underline wavy;
+  text-decoration-thickness: 0px;  
+}
+ */
+@media (max-width: 767px) {
+  form {
+    max-width: 100%;
+  }
+  input{
+    width: fit-content;
+  }
+  button {
+    width: fit-content;
+    max-width: 100%;
+  }
+} 
